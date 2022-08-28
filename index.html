@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="display"></div>
+        <div class="buttons">
+            <div onclick="addDisplayFunction('+')" class="button button-op">+</div>
+            <div onclick="addDisplayText('7')" class="button">7</div>
+            <div onclick="addDisplayText('4')" class="button">4</div>
+            <div onclick="addDisplayText('1')" class="button">1</div>
+            <div onclick="addDisplayText('0')" class="button">0</div>
+
+            <div onclick="addDisplayFunction('-')" class="button button-op">-</div>
+            <div onclick="addDisplayText('8')" class="button">8</div>
+            <div onclick="addDisplayText('5')" class="button">5</div>
+            <div onclick="addDisplayText('2')" class="button">2</div>
+            <div onclick="addDisplayText('.')" class="button">.</div>
+
+            <div onclick="addDisplayFunction('*')" class="button button-op">×</div>
+            <div onclick="addDisplayText('9')" class="button">9</div>
+            <div onclick="addDisplayText('6')" class="button">6</div>
+            <div onclick="addDisplayText('3')" class="button">3</div>
+            <div onclick="clearAll()" class="button">C</div>
+
+            <div onclick="addDisplayFunction('/')" class="button button-op">÷</div>
+            <div onclick="equalButton()" class="button button-equal">=</div>
+        </div>
+    </div>
+</body>
+
+<script src="calculator.js"></script>
+
+</html>
